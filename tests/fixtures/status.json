@@ -1,0 +1,61 @@
+{
+  "Version": "1.88.1-t1234abcd",
+  "BackendState": "Running",
+  "TailscaleIPs": ["100.64.0.1", "fd7a:115c:a1e0::1"],
+  "Self": {
+    "ID": "nSelf1CNTRL",
+    "HostName": "Peters-MacBook-Pro",
+    "DNSName": "peters-macbook-pro.tail1234.ts.net.",
+    "OS": "macOS",
+    "TailscaleIPs": ["100.64.0.1", "fd7a:115c:a1e0::1"],
+    "Online": true,
+    "Active": false,
+    "Relay": "mia",
+    "CurAddr": "",
+    "LastSeen": "0001-01-01T00:00:00Z"
+  },
+  "Health": [],
+  "MagicDNSSuffix": "tail1234.ts.net",
+  "CurrentTailnet": {"Name": "example@github", "MagicDNSSuffix": "tail1234.ts.net", "MagicDNSEnabled": true},
+  "Peer": {
+    "nodekey:aaa": {
+      "ID": "nA1CNTRL",
+      "HostName": "ubuntu-sumrall",
+      "DNSName": "ubuntu-sumrall.tail1234.ts.net.",
+      "OS": "linux",
+      "TailscaleIPs": ["100.64.0.2", "fd7a:115c:a1e0::2"],
+      "Tags": ["tag:server"],
+      "Online": true,
+      "Active": true,
+      "ExitNode": true,
+      "ExitNodeOption": true,
+      "Relay": "mia",
+      "CurAddr": "203.0.113.5:41641",
+      "RxBytes": 1234,
+      "TxBytes": 5678,
+      "LastSeen": "0001-01-01T00:00:00Z"
+    },
+    "nodekey:bbb": {
+      "ID": "nB1CNTRL",
+      "HostName": "old-pi",
+      "DNSName": "old-pi.tail1234.ts.net.",
+      "OS": "linux",
+      "TailscaleIPs": ["100.64.0.3"],
+      "Online": false,
+      "Relay": "dfw",
+      "CurAddr": "",
+      "LastSeen": "2026-09-24T10:00:00.123456789Z"
+    },
+    "nodekey:ccc": {
+      "ID": "nC1CNTRL",
+      "HostName": "iPhone",
+      "DNSName": "iphone.tail1234.ts.net.",
+      "OS": "iOS",
+      "TailscaleIPs": ["100.64.0.4"],
+      "Online": true,
+      "Relay": "mia",
+      "CurAddr": "",
+      "LastSeen": "0001-01-01T00:00:00Z"
+    }
+  }
+}

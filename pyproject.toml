@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "homelabbar"
+version = "0.1.0"
+description = "Tailscale + homelab service status in the macOS menu bar"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["rumps>=0.4.0; sys_platform == 'darwin'"]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[project.scripts]
+homelabbar = "homelabbar.__main__:main"
+
+[tool.setuptools]
+packages = ["homelabbar"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
